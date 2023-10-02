@@ -26,3 +26,9 @@ factorsum = sum(MidtermsPractice.factors(perfNumber))
 print("Factor: ", MidtermsPractice.factors(perfNumber), " = ", factorsum)
 print(perfNumber, MidtermsPractice.isperfectnumber(perfNumber))
 print("")
+
+# Problem 5
+print("Friendly Pair Number Checker")
+num1 = int(input("Enter the 1st Number: "))
+num2 = int(input("Enter the 2nd Number: "))
+print(MidtermsPractice.isfriendlypair(num1, num2))

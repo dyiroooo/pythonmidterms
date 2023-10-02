@@ -49,3 +49,16 @@ def isperfectnumber(number):
         return "is not a perfect number."
     else:
         return "is a perfect number."
+
+
+def isfriendlypair(number1, number2):
+    # Get their factors first
+    numfac1 = factors(number1)
+    numfac2 = factors(number2)
+    # Check their sum
+    sumfac1 = sum(numfac1)
+    sumfac2 = sum(numfac2)
+    if sumfac1 == number2 and sumfac2 == number1:
+        return f"{number1} and {number2} are friendly pairs."
+    else:
+        return f"{number1} and {number2} are not friendly pairs."
