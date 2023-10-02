@@ -46,5 +46,6 @@ def isperfectnumber(number):
     numList = factors(number)
     perfect = sum(numList)
     if perfect != number:
-        return "Not A Perfect Number"
-    return "A Perfect Number"
+        return "is not a perfect number."
+    else:
+        return "is a perfect number."
