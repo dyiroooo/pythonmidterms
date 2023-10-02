@@ -23,7 +23,28 @@ def isprime(number):
         return "Prime Number"
 
 
+def explode(number):
+    exploded = list(map(int, str(number)))
+    return exploded
+
+
 def sumnumber(number):
-    explode = list(map(int, str(number)))
-    totalsum = sum(explode)
+    exploded_digits = explode(number)
+    totalsum = sum(exploded_digits)
     return totalsum
+
+
+def factors(number):
+    factors = []
+    for i in range(1, number):
+        if number % i == 0:
+            factors.append(i)
+    return factors
+
+
+def isperfectnumber(number):
+    numList = factors(number)
+    perfect = sum(numList)
+    if perfect != number:
+        return "Not A Perfect Number"
+    return "A Perfect Number"
